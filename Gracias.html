@@ -8,36 +8,48 @@
     <style>
         body {
             background-image: url(imagen6.avif);
-            background-size:contain; 
+            background-size: cover;
             background-position: center;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
+            margin: 0;
+
         }
-        
+
 
         h1 {
-             margin-bottom: 200px;
+            margin-bottom: 40px;
             text-align: center;
-            color:chartreuse;
-            font-size:60px;
-       
+            color: rgb(255, 0, 34);
+            font-size: clamp(28px, 6vw, 80px);
+
         }
-        a{
-            color:chartreuse;
-            font-size: 40px;
-            margin-top: 10px ;
-          
+
+        a {
+            color: rgb(255, 0, 0);
+            font-size: clamp(18px, 4vw, 30px);
+            margin-top: 20px;
+            display: inline-block;
+
+        }
+
+        .contenido {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            padding-top: 40px;
         }
     </style>
 </head>
 
 <body>
-    <h1>NOS PONDREMOS EN CONTACTO CON VOS A LA BREVEDAD!</h1>
-    <a href="index.html">Volver al inicio</a>
-
+    <div class="contenido">
+        <h1>NOS PONDREMOS EN CONTACTO CON VOS A LA BREVEDAD!</h1>
+        <a href="index.html">Volver al inicio</a>
+    </div>
 </body>
 
 </html>
