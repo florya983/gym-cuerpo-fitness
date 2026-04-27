@@ -1,47 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body {
+            margin: 0;
             background-image: url(imagen2.jpeg);
-            background-size:cover;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-        .Promociones{
-            color: rgb(79, 236, 17);
-            font-size: 30px;
+        * {
+            box-sizing: border-box;
+        }
+
+        .Promociones {
+            color: rgb(250, 246, 20);
+            font-size: clamp(16px, 4vw, 26px);
 
         }
 
-        .Promociones li{
-             margin-top: 50px;
-             margin-bottom: 30px;
+        .Promociones li {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            line-height: 1.4;
 
         }
-        h1{
+
+        .contenido {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 25px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            margin: 20px auto;
+            text-align: center;
+            overflow: visible;
+        }
+
+        h1 {
             margin-bottom: 90px;
             color: rgb(135, 23, 201);
             text-align: center;
             font-size: 40px;
-            font-family:Georgia, 'Times New Roman', Times, serif
-        }
-
-
+            font-family: Georgia, 'Times New Roman', Times, serif
         }
     </style>
 </head>
-<body>
-    <h1>PROMOCIONES</h1> 
-    <a href="index.html"></a>
-    <ul class="Promociones">
-        <li>SI PAGAS UN AÑO POR ADELANTADO OBTENES 50% DE DESCUENTO </li>
-        <li>ABONANDO SEIS MESES POR ADELANTADO TENES 25% DE DESCUENTO</li>
-        <li>SI TRAES A UN AMIGO A ENTRENAR TENES TRES MESES GRATIS  </li>
-        <li>ABONANDO CON TARJETA TENES HASTA TRES CUOTAS SIN INTERES </li>
-    </ul>
 
-    
+<body>
+    <div class="contenido">
+        <h1>PROMOCIONES</h1>
+        <a href="index.html"></a>
+        <ul class="Promociones">
+            <li>SI PAGAS UN AÑO POR ADELANTADO OBTENES 50% DE DESCUENTO </li>
+            <li>ABONANDO SEIS MESES POR ADELANTADO TENES 25% DE DESCUENTO</li>
+            <li>SI TRAES A UN AMIGO A ENTRENAR TENES TRES MESES GRATIS </li>
+            <li>ABONANDO CON TARJETA TENES HASTA TRES CUOTAS SIN INTERES </li>
+        </ul>
+    </div>
+
 </body>
+
 </html>
