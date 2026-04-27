@@ -7,16 +7,27 @@
     <title>Document</title>
     <style>
         body {
+            margin: 0;
+            min-height: 100vh;
             background-image: url(imagen3.jpg);
-            background-size:cover;
-
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         .Contacto {
             color: rgb(221, 236, 7);
-            font-size: 50px;
+            font-size: clamp(15px, 5vw, 32px);
+            background: rgba(0, 0, 0, 0.5);
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            margin: auto;
 
         }
 
@@ -24,13 +35,31 @@
             margin-bottom: 40px;
 
         }
-        h1{
+
+        h1 {
+            background: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
             margin-top: 50px;
             margin-bottom: 100px;
             color: rgb(229, 245, 11);
             text-align: center;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 50px;
+            font-size: clamp(28px, 6vw, 80px);
+        }
+
+        footer h2 {
+            margin-top: 100px;
+            padding-bottom: 40px;
+            background: rgba(0, 0, 0, 0.5);
+            color: rgb(229, 245, 11);
+            text-align: center;
+            font-size: clamp(18px, 4vw, 32px);
+            margin-top: auto;
+            padding-bottom: 40px;
+            text-align: center;
+
         }
     </style>
 </head>
@@ -40,13 +69,15 @@
     <a href="index.html"></a>
     <ul class="Contacto">
         <li>
-            WHATS APP: 15-5656-7777 </li>
+            WHATS APP: 15-4356-0000 </li>
         <li>
             E-MAIL: CUERPOFITNESSGYM@GMAIL.COM </li>
         <li>
             INSTAGRAM: CUERPOFITNESSGYM </li>
     </ul>
-
+    <footer>
+        <h2>DIRECCION AVENIDA CALLAO 500 RECOLETA </h2>
+    </footer>
 
 </body>
 
